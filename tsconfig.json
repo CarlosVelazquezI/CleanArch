@@ -1,0 +1,46 @@
+// prettier-ignore
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Completeness */
+    // "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */,
+    // //"target": "es2015",
+    // //"module": "es2015",
+    // "jsx":"react-native",
+    // //"moduleResolution": "node",
+    // "allowSyntheticDefaultImports": true,
+    // //"experimentalDecorators": true,
+    // "noImplicitAny": true,
+
+
+    // "target": "es5",
+    // "lib": ["es6", "dom"],
+    // "types": ["reflect-metadata"],
+    // "module": "commonjs",
+    // "moduleResolution": "node",
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "lib": ["es6", "dom"],
+    "types": ["reflect-metadata", "node"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false
+    
+  }
+}
