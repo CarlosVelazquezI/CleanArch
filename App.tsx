@@ -10,15 +10,12 @@
 
 import React, { Component } from 'react';
 import { Navigation } from 'react-native-navigation';
-import App2 from './App2';
+
 import registrerScreen from './src/ui/navigation';
 import "reflect-metadata";
-import  login  from './src/ui/screens/login/login';
 
 registrerScreen();
 
-const loginJson = new login();
-loginJson.setLogin();
 
  Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
@@ -27,11 +24,7 @@ loginJson.setLogin();
         children: [
           {
             component: {
-              name: 'homeScreen',
-               passProps:{
-                loginJson: loginJson.loginJson,
-               }
-              
+              name: 'HomeScreen',
             }
           }
         ]

@@ -1,9 +1,7 @@
 import { Navigation } from 'react-native-navigation';
-import userScreen from '../screens/user/userScreen';
-import homeScreen from '../screens/index'
 
+import HomeScreen from '../screens/home/HomeScreen';
 
 export default function registrerScreen(){
-    Navigation.registerComponent('userScreen', () => userScreen);
-    Navigation.registerComponent('homeScreen',() => homeScreen);
+    Navigation.registerComponent('HomeScreen', () => HomeScreen);
 }
