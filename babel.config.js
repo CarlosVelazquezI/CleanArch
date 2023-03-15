@@ -10,5 +10,6 @@ module.exports = {
     "babel-plugin-transform-typescript-metadata",
     
     
+    
   ]
 };

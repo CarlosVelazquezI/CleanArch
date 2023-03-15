@@ -4,14 +4,15 @@ import { Usecase } from '../useCase';
 
 
 @injectable()
-class getAllBanks implements Usecase<bank.bancosRepository>{
+class getAllBanks implements Usecase<object[]>{
 
     constructor(
-        @inject('bancosRepository') private repository: bank.bancosRepository){}     
+        @inject('bancosRepository') private repository: bank.bancosRepository,
+    ){}     
 
-    async run(): Promise<Object[]>{
+    async run(): Promise<object[]>{
         const bancos = await this.repository.getBancos();
-        const dataBank: Object[] = [];
+        const dataBank: object[] = [];
         bancos.map((item, index) =>{
             dataBank.push({
                 id: index,
@@ -35,9 +36,12 @@ class getAllBanks implements Usecase<bank.bancosRepository>{
                         description: item.url
                     }    
                 ]
-           })
+           });
 
         });
+
+
+        
         return Promise.resolve(dataBank);
     }
 }

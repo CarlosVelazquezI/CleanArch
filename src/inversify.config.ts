@@ -24,7 +24,7 @@ import { HomeViewModel } from "./ui/screens/home/HomeViewModel";
 
 //Network
 
-container.bind<HttpManager>('HttpManager').to(AxiosHttpManager).inSingletonScope;
+container.bind<HttpManager>('HttpManager').to(AxiosHttpManager).inSingletonScope();
 
 //Services
 
